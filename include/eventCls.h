@@ -37,14 +37,12 @@ private:
 
     static const int INPUT_H = 224;
     static const int INPUT_W = 224;
-    static const int OUTPUT_SIZE = 35;
+    static const int OUTPUT_SIZE = 14;
     static const int BS = 1;
     const char* INPUT_BLOB_NAME = "roi";
     const char* OUTPUT_BLOB_NAME = "prob";
-    std::vector<std::string> labelmap = {"乱堆物料", "人骑车_行驶状态", "出店经营", "卖衣服游商", "合规广告类", "合规的早餐车", "垃圾桶未满溢", "垃圾桶满溢", "平摊", "广告误检",
-                                         "店内(橱窗内)晾晒", "店内经营", "废弃摊位_不在经营的摊位", "打包垃圾", "撑伞", "无照经营游商", "晒玉米粮食等", "暴露垃圾", "气模拱门",
-                                         "沿街晾晒", "渣土堆积", "盆栽花卉", "矩摊", "石头_假山_雕塑_墙体等", "砖块堆积", "篮筐", "经营性物资", "误检", "车上堆积", "车辆无遮挡",
-                                         "车辆有遮挡", "运动中游商", "违规不上报广告类", "违规广告类", "遮盖布"};
+    std::vector<std::string> labelmap = {"000-one", "001-five", "002-fist", "003-ok", "004-heartSingle", "005-yearh",
+                                         "006-three", "007-four","008-six", "009-Iloveyou", "010-gun", "011-thumbUp", "012-nine", "013-pink"};
     Logger gLogger_;
     IRuntime* runtime_;
     IExecutionContext *context_;

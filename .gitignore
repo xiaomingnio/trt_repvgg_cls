@@ -1,0 +1,4 @@
+cmake-build-debug
+repvgg/cmake-build-debug
+*.wts
+.idea

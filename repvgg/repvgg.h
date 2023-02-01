@@ -97,7 +97,7 @@ public:
 
     static const int INPUT_H = 224;
     static const int INPUT_W = 224;
-    static const int OUTPUT_SIZE = 35;
+    static const int OUTPUT_SIZE = 14;
 
     const char *INPUT_BLOB_NAME = "data";
     const char *OUTPUT_BLOB_NAME = "prob";

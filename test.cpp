@@ -10,7 +10,7 @@ int main(int argc, char** argv)
     AlgEventCLS* clsprocessor = new AlgEventCLS();
     // read image
     cout << "read image ..." << endl;
-    cv::Mat images= cv::imread("/home/zhaoming/data/site_data/32030013-2022_12_29_11_18_22_250003_OUTSIDE_OPERATIO_2.jpg");
+    cv::Mat images= cv::imread("../data/gesture-one-2021-03-07_23-07-48-1_37388.jpg");
     PredRes *results = new PredRes();
 //    clsprocessor->getEvents(images,results);
     struct timeval detstart;

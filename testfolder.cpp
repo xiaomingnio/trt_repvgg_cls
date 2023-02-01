@@ -14,7 +14,7 @@ int main(int argc, char** argv)
     int totalnum = 0;
     int rightnum = 0;
     double totaltime = 0.0;
-    std::string valfile = "/home/zhaoming/data/test.txt";
+    std::string valfile = "../data/test.txt";
 
     std::ifstream infile;
         std::string a, b;
